@@ -23,7 +23,7 @@ def promotion():
 
 @app.route('/image_mars')
 def image_mars():
-    return f'''<img src="{url_for('static', filename='img/mars.png')}">'''
+    return '<br>'.join(['Жди нас, Илон Маск', f'''<img src="{url_for('static', filename='img/mars.png')}">'''])
 
 
 if __name__ == '__main__':
